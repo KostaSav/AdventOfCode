@@ -6,6 +6,8 @@ with open('2020\day5.txt', 'r') as f:
 # print(bpasses)
 
 max_bpass = 0
+ids = set()
+
 
 for bpass in bpasses:
     front = 0
@@ -20,14 +22,20 @@ for bpass in bpasses:
             front = math.ceil((back+front)/2)
     # print(str(front) + "-" + str(back))
 
-    for j in range (7, 10):
+    for j in range(7, 10):
         if bpass[j] == "L":
             upper = math.floor((lower+upper)/2)
         else:
             lower = math.ceil((lower+upper)/2)
-    # print(str(lower) + "-" + str(upper))
-    # print()
-    if (back*8 + upper) > max_bpass:
+
+    id = back*8 + upper
+    ids.add(id)
+    if id > max_bpass:
         max_bpass = back*8 + upper
 
 print(max_bpass)
+
+# Part Two
+for i in range(max_bpass):
+    if i not in ids and i-1 in ids and i+1 in ids:
+        print(i)
