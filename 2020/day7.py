@@ -56,6 +56,10 @@ print(count_bags("shiny gold"))
 
 
 #################### Part Two ####################
+# I was stuck on this part for a long time,
+# so I used some help from Bradley Sward's solution:
+# https://www.youtube.com/watch?v=4Fr1zSzaUyY
+
 rules_dict_2 = dict()
 
 for rule in rules:
