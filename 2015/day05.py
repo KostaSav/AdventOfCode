@@ -1,4 +1,8 @@
-with open("2015/day05.txt", "r") as f:
+"""
+--- Day 5: Doesn't He Have Intern-Elves For This? ---
+"""
+
+with open("2015/day05.txt", "r", encoding="utf-8") as f:
     strings_arr = [line.strip() for line in f]
 
 # ------ Part One ------ #

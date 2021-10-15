@@ -1,4 +1,8 @@
-with open("2015\day03.txt", "r") as f:
+"""
+--- Day 3: Perfectly Spherical Houses in a Vacuum ---
+"""
+
+with open("2015/day03.txt", "r", encoding="utf-8") as f:
     moves_str = f.read()
 
 # ------ Part One ------ #

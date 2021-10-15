@@ -1,5 +1,5 @@
 """
-Day 6: Probably a Fire Hazard
+--- Day 6: Probably a Fire Hazard ---
 """
 
 with open("2015/day06.txt", "r", encoding="utf-8") as f:

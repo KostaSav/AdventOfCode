@@ -1,3 +1,7 @@
+"""
+--- Day 4: The Ideal Stocking Stuffer ---
+"""
+
 # ------ Part One ------ #
 
 # Python 3 code to demonstrate the
@@ -5,7 +9,7 @@
 import hashlib
 
 # Initialize string
-with open("2015/day04.txt", "r") as f:
+with open("2015/day04.txt", "r", encoding="utf-8") as f:
     secret_key = f.read()
 decimal_number = 0
 print(secret_key)

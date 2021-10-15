@@ -1,8 +1,12 @@
-with open("2015\day02.txt", "r") as f:
+"""
+--- Day 2: I Was Told There Would Be No Math ---
+"""
+
+with open("2015/day02.txt", "r", encoding="utf-8") as f:
     entries_arr = [line.strip() for line in f]
 
 # ------ Part One ------ #
-total = 0
+TOTAL = 0
 
 for entry in entries_arr:
     l = int(entry.split("x")[0])
@@ -13,15 +17,15 @@ for entry in entries_arr:
     surface_3 = h * l
     small_side = min(surface_1, surface_2, surface_3)
     paper = 2 * surface_1 + 2 * surface_2 + 2 * surface_3 + small_side
-    total += paper
+    TOTAL += paper
 
-print(total)
+print(TOTAL)
 
 # ------ End of Part One ------ #
 
 
 # ------ Part Two ------ #
-total_ribbon = 0
+TOTAL_RIBBON = 0
 
 for entry in entries_arr:
     l = int(entry.split("x")[0])
@@ -36,8 +40,8 @@ for entry in entries_arr:
     bow = l * w * h
 
     ribbon = 2 * smallest_first + 2 * smallest_second + bow
-    total_ribbon += ribbon
+    TOTAL_RIBBON += ribbon
 
-print(total_ribbon)
+print(TOTAL_RIBBON)
 
 # ------ End of Part Two ------ #
